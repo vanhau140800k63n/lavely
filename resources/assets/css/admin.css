@@ -1,0 +1,13 @@
+.admin_action_btn {
+    text-align: right;
+}
+
+.voucher_form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.voucher_form>div {
+    width: 48%;
+}

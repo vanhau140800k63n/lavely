@@ -1,0 +1,101 @@
+.user_container .address_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user_container .address_title button,
+.address_container .address_form button {
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    background: var(--app-gradient);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.address_container .popup_content {
+    max-width: 500px;
+}
+
+.address_container .address_form input,
+.address_container .address_form select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+.address_container .address_form input::placeholder {
+    color: #ccc;
+}
+
+.address_container .address_form button {
+    margin-top: 20px;
+}
+
+.address_container .error_text {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+}
+
+.address_container .address_item {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address_container .address_item .action {
+    text-align: right;
+}
+
+.address_container .address_item .name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.address_container .address_item .name span {
+    color: #555555;
+    font-size: 16px;
+}
+
+.address_container .address_item .location {
+    color: #555555;
+    margin-top: 10px;
+}
+
+.address_container .address_item button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px 0;
+}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media only screen and (max-width: 575px) {
+    .address_container .address_item {
+        padding: 10px;
+    }
+
+    .address_container .address_item .name {
+        font-size: 16px;
+    }
+
+    .user_container .address_title button, .address_container .address_form button {
+        font-size: 12px;
+    }
+}

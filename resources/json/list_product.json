@@ -1,0 +1,553 @@
+{
+    "action": null,
+    "code": 1,
+    "data": {
+        "product": {
+            "_id": "6707654253b6f02a5e20a2e5",
+            "name": "ÁO PHAO THÊU TIM MŨ RÚT DÂY AP42",
+            "desc": "\u003cp\u003eKhông cần nói nhiều ạ. Quá đẹp quá dày dặn rồi.\u003c/p\u003e\u003cp\u003ePhao thêu tim mũ rút dây.Mũ có thể tháo rời ạ. Chấp mọi thời tiết. \u003c/p\u003e\u003cp\u003eHàng form đại chị em từ 65kg đổ lại mặc thoải mái ạ.\u003c/p\u003e\u003cp\u003eBên em có 3 màu kem, đen, vàng bò. \u003c/p\u003e",
+            "photos": [
+                {
+                    "_id": "6707642ad5fb24a42b3d76c5",
+                    "name": "1728537642094qd3YPTq2vk.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 480,
+                            "height": 480,
+                            "url": "https://media.sellycdn.net/files/sm_1728537642094qd3YPTq2vk.jpg"
+                        },
+                        "md": {
+                            "width": 720,
+                            "height": 720,
+                            "url": "https://media.sellycdn.net/files/md_1728537642094qd3YPTq2vk.jpg"
+                        }
+                    }
+                },
+                {
+                    "_id": "67076429d5fb24a42b3d76c2",
+                    "name": "1728537641759KPCY1yYpzr.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 480,
+                            "height": 480,
+                            "url": "https://media.sellycdn.net/files/sm_1728537641759KPCY1yYpzr.jpg"
+                        },
+                        "md": {
+                            "width": 720,
+                            "height": 720,
+                            "url": "https://media.sellycdn.net/files/md_1728537641759KPCY1yYpzr.jpg"
+                        }
+                    }
+                },
+                {
+                    "_id": "67076429d5fb24a42b3d76c0",
+                    "name": "1728537641742TcJl655TgH.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 480,
+                            "height": 480,
+                            "url": "https://media.sellycdn.net/files/sm_1728537641742TcJl655TgH.jpg"
+                        },
+                        "md": {
+                            "width": 720,
+                            "height": 720,
+                            "url": "https://media.sellycdn.net/files/md_1728537641742TcJl655TgH.jpg"
+                        }
+                    }
+                },
+                {
+                    "_id": "6707642ad5fb24a42b3d76c3",
+                    "name": "1728537641724gNbxxu1jZv.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 480,
+                            "height": 480,
+                            "url": "https://media.sellycdn.net/files/sm_1728537641724gNbxxu1jZv.jpg"
+                        },
+                        "md": {
+                            "width": 720,
+                            "height": 720,
+                            "url": "https://media.sellycdn.net/files/md_1728537641724gNbxxu1jZv.jpg"
+                        }
+                    }
+                },
+                {
+                    "_id": "67076429d5fb24a42b3d76c1",
+                    "name": "17285376416656K6ZGYoOBV.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 480,
+                            "height": 480,
+                            "url": "https://media.sellycdn.net/files/sm_17285376416656K6ZGYoOBV.jpg"
+                        },
+                        "md": {
+                            "width": 720,
+                            "height": 720,
+                            "url": "https://media.sellycdn.net/files/md_17285376416656K6ZGYoOBV.jpg"
+                        }
+                    }
+                },
+                {
+                    "_id": "6707642ad5fb24a42b3d76c4",
+                    "name": "1728537641661ltLHOoBbwU.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 480,
+                            "height": 480,
+                            "url": "https://media.sellycdn.net/files/sm_1728537641661ltLHOoBbwU.jpg"
+                        },
+                        "md": {
+                            "width": 720,
+                            "height": 720,
+                            "url": "https://media.sellycdn.net/files/md_1728537641661ltLHOoBbwU.jpg"
+                        }
+                    }
+                },
+                {
+                    "_id": "6707642ad5fb24a42b3d76c7",
+                    "name": "1728537642823AXoQ7Phwl3.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 480,
+                            "height": 480,
+                            "url": "https://media.sellycdn.net/files/sm_1728537642823AXoQ7Phwl3.jpg"
+                        },
+                        "md": {
+                            "width": 720,
+                            "height": 720,
+                            "url": "https://media.sellycdn.net/files/md_1728537642823AXoQ7Phwl3.jpg"
+                        }
+                    }
+                },
+                {
+                    "_id": "6707642ad5fb24a42b3d76c6",
+                    "name": "1728537642836p7sbal2cMi.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 480,
+                            "height": 480,
+                            "url": "https://media.sellycdn.net/files/sm_1728537642836p7sbal2cMi.jpg"
+                        },
+                        "md": {
+                            "width": 720,
+                            "height": 720,
+                            "url": "https://media.sellycdn.net/files/md_1728537642836p7sbal2cMi.jpg"
+                        }
+                    }
+                },
+                {
+                    "_id": "6707642ad5fb24a42b3d76c9",
+                    "name": "1728537642818mVrkFTSj4P.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 480,
+                            "height": 480,
+                            "url": "https://media.sellycdn.net/files/sm_1728537642818mVrkFTSj4P.jpg"
+                        },
+                        "md": {
+                            "width": 720,
+                            "height": 720,
+                            "url": "https://media.sellycdn.net/files/md_1728537642818mVrkFTSj4P.jpg"
+                        }
+                    }
+                },
+                {
+                    "_id": "6707642ad5fb24a42b3d76c8",
+                    "name": "1728537642840XucENafYaN.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 480,
+                            "height": 480,
+                            "url": "https://media.sellycdn.net/files/sm_1728537642840XucENafYaN.jpg"
+                        },
+                        "md": {
+                            "width": 720,
+                            "height": 720,
+                            "url": "https://media.sellycdn.net/files/md_1728537642840XucENafYaN.jpg"
+                        }
+                    }
+                }
+            ],
+            "info": {
+                "category": null,
+                "supplier": {
+                    "_id": "647036fd64b42bad9d629a9b",
+                    "name": "HM18 NINH HIỆP"
+                },
+                "inventory": {
+                    "_id": "64741ba7e8b461077b1e5186",
+                    "name": "HM18 NINH HIỆP",
+                    "location": {
+                        "address": "Quầy A36 TTTM Tuấn Dung",
+                        "province": "ha-noi",
+                        "provinceName": "Thành phố Hà Nội",
+                        "district": "huyen-gia-lam",
+                        "ward": "xa-ninh-hiep",
+                        "fullAddress": "Quầy A36 TTTM Tuấn Dung",
+                        "location": {
+                            "latitude": 21.078377545102082,
+                            "longitude": 105.9467176968453
+                        }
+                    }
+                },
+                "profit": 27930,
+                "weight": 800,
+                "dimension": "30x20x5"
+            },
+            "guides": [],
+            "items": [
+                {
+                    "_id": "6707654253b6f02a5e20a2e7",
+                    "businessType": "other",
+                    "sku": "pPt6D5uMFT_ZZCAvSAp",
+                    "price": {
+                        "from": 182070,
+                        "base": 182070,
+                        "market": 210000,
+                        "minimum": 182070,
+                        "maximum": 210000,
+                        "profit": 27930,
+                        "sellyProfit": 30870,
+                        "supplier": 151200,
+                        "wholesaleBonus": 0
+                    },
+                    "supplierSku": "pPt6D5uMFT",
+                    "properties": [
+                        {
+                            "_id": "647ee5810c6c8d1b2b336ceb",
+                            "name": "Màu sắc",
+                            "isHighlight": false,
+                            "value": {
+                                "_id": "6481e6c20c6c8d1b2b35277c",
+                                "name": "Đen",
+                                "isHighlight": false,
+                                "order": 0
+                            },
+                            "order": 0
+                        }
+                    ],
+                    "display": true,
+                    "info": {
+                        "dimension": "30x20x5 (cm)",
+                        "weight": "800 grams",
+                        "inventory": {
+                            "_id": "64741ba7e8b461077b1e5186",
+                            "name": "HM18 NINH HIỆP",
+                            "location": {
+                                "address": "Quầy A36 TTTM Tuấn Dung",
+                                "province": "ha-noi",
+                                "provinceName": "Thành phố Hà Nội",
+                                "district": "",
+                                "ward": "",
+                                "location": null
+                            }
+                        },
+                        "supplier": {
+                            "_id": "647036fd64b42bad9d629a9b",
+                            "name": "HM18 NINH HIỆP"
+                        }
+                    },
+                    "isOutOfStock": false,
+                    "picture": "https://media.sellycdn.net/files/sm_172853784863051LVWASYs7.jpg",
+                    "hasWishList": false,
+                    "name": "ÁO PHAO THÊU TIM MŨ RÚT DÂY AP42 (Đen)",
+                    "canBuyWholesale": false,
+                    "documents": null,
+                    "type": "physical",
+                    "wholesalePrices": [],
+                    "preDiscountWholesalePrices": [],
+                    "quantity": -1,
+                    "isShowDeliveryFee": true
+                },
+                {
+                    "_id": "6707654253b6f02a5e20a2e6",
+                    "businessType": "other",
+                    "sku": "xXXaKMAcOo_mVCXeiPv",
+                    "price": {
+                        "from": 182070,
+                        "base": 182070,
+                        "market": 210000,
+                        "minimum": 182070,
+                        "maximum": 210000,
+                        "profit": 27930,
+                        "sellyProfit": 30870,
+                        "supplier": 151200,
+                        "wholesaleBonus": 0
+                    },
+                    "supplierSku": "xXXaKMAcOo",
+                    "properties": [
+                        {
+                            "_id": "647ee5810c6c8d1b2b336ceb",
+                            "name": "Màu sắc",
+                            "isHighlight": false,
+                            "value": {
+                                "_id": "648295a70c6c8d1b2b3545ea",
+                                "name": "Be",
+                                "isHighlight": false,
+                                "order": 0
+                            },
+                            "order": 0
+                        }
+                    ],
+                    "display": false,
+                    "info": {
+                        "dimension": "30x20x5 (cm)",
+                        "weight": "800 grams",
+                        "inventory": {
+                            "_id": "64741ba7e8b461077b1e5186",
+                            "name": "HM18 NINH HIỆP",
+                            "location": {
+                                "address": "Quầy A36 TTTM Tuấn Dung",
+                                "province": "ha-noi",
+                                "provinceName": "Thành phố Hà Nội",
+                                "district": "",
+                                "ward": "",
+                                "location": null
+                            }
+                        },
+                        "supplier": {
+                            "_id": "647036fd64b42bad9d629a9b",
+                            "name": "HM18 NINH HIỆP"
+                        }
+                    },
+                    "isOutOfStock": false,
+                    "picture": "https://media.sellycdn.net/files/sm_1728537845514LhtFzkZD0z.jpg",
+                    "hasWishList": false,
+                    "name": "ÁO PHAO THÊU TIM MŨ RÚT DÂY AP42 (Be)",
+                    "canBuyWholesale": false,
+                    "documents": null,
+                    "type": "physical",
+                    "wholesalePrices": [],
+                    "preDiscountWholesalePrices": [],
+                    "quantity": -1,
+                    "isShowDeliveryFee": true
+                },
+                {
+                    "_id": "6707654253b6f02a5e20a2e8",
+                    "businessType": "other",
+                    "sku": "X8xzoCcvuO_OExbNR7h",
+                    "price": {
+                        "from": 182070,
+                        "base": 182070,
+                        "market": 210000,
+                        "minimum": 182070,
+                        "maximum": 210000,
+                        "profit": 27930,
+                        "sellyProfit": 30870,
+                        "supplier": 151200,
+                        "wholesaleBonus": 0
+                    },
+                    "supplierSku": "X8xzoCcvuO",
+                    "properties": [
+                        {
+                            "_id": "647ee5810c6c8d1b2b336ceb",
+                            "name": "Màu sắc",
+                            "isHighlight": false,
+                            "value": {
+                                "_id": "6580652b8a615e9bee72a2d5",
+                                "name": "Vàng bò",
+                                "isHighlight": false,
+                                "order": 0
+                            },
+                            "order": 0
+                        }
+                    ],
+                    "display": false,
+                    "info": {
+                        "dimension": "30x20x5 (cm)",
+                        "weight": "800 grams",
+                        "inventory": {
+                            "_id": "64741ba7e8b461077b1e5186",
+                            "name": "HM18 NINH HIỆP",
+                            "location": {
+                                "address": "Quầy A36 TTTM Tuấn Dung",
+                                "province": "ha-noi",
+                                "provinceName": "Thành phố Hà Nội",
+                                "district": "",
+                                "ward": "",
+                                "location": null
+                            }
+                        },
+                        "supplier": {
+                            "_id": "647036fd64b42bad9d629a9b",
+                            "name": "HM18 NINH HIỆP"
+                        }
+                    },
+                    "isOutOfStock": false,
+                    "picture": "https://media.sellycdn.net/files/sm_1728537854838I2ugyYEHYO.jpg",
+                    "hasWishList": false,
+                    "name": "ÁO PHAO THÊU TIM MŨ RÚT DÂY AP42 (Vàng bò)",
+                    "canBuyWholesale": false,
+                    "documents": null,
+                    "type": "physical",
+                    "wholesalePrices": [],
+                    "preDiscountWholesalePrices": [],
+                    "quantity": -1,
+                    "isShowDeliveryFee": true
+                }
+            ],
+            "price": {
+                "from": 182070,
+                "base": 182070,
+                "market": 210000,
+                "minimum": 182070,
+                "maximum": 210000,
+                "profit": 27930,
+                "sellyProfit": 30870,
+                "supplier": 151200,
+                "wholesaleBonus": 0
+            },
+            "preDiscountPrice": null,
+            "shareDesc": "Không cần nói nhiều ạ. Quá đẹp quá dày dặn rồi.\nPhao thêu tim mũ rút dây.Mũ có thể tháo rời ạ. Chấp mọi thời tiết. \nHàng form đại chị em từ 65kg đổ lại mặc thoải mái ạ.\nBên em có 3 màu kem, đen, vàng bò. ",
+            "shareImages": [
+                "https://media.sellycdn.net/files/md_1728537642094qd3YPTq2vk.jpg",
+                "https://media.sellycdn.net/files/md_1728537641759KPCY1yYpzr.jpg",
+                "https://media.sellycdn.net/files/md_1728537641742TcJl655TgH.jpg",
+                "https://media.sellycdn.net/files/md_1728537641724gNbxxu1jZv.jpg",
+                "https://media.sellycdn.net/files/md_17285376416656K6ZGYoOBV.jpg",
+                "https://media.sellycdn.net/files/md_1728537641661ltLHOoBbwU.jpg",
+                "https://media.sellycdn.net/files/md_1728537642823AXoQ7Phwl3.jpg",
+                "https://media.sellycdn.net/files/md_1728537642836p7sbal2cMi.jpg",
+                "https://media.sellycdn.net/files/md_1728537642818mVrkFTSj4P.jpg",
+                "https://media.sellycdn.net/files/md_1728537642840XucENafYaN.jpg"
+            ],
+            "promotions": [],
+            "categories": [
+                {
+                    "_id": "5fe995384ed0328a42a47947",
+                    "name": "Thời Trang Nữ",
+                    "icon": {
+                        "_id": "60471ef51672ee1f781db015",
+                        "name": "081753624643_1615273716998.png",
+                        "dimensions": {
+                            "sm": {
+                                "width": 71,
+                                "height": 70,
+                                "url": "https://media.sellycdn.net/files/sm_081753624643_1615273716998.png"
+                            },
+                            "md": {
+                                "width": 141,
+                                "height": 140,
+                                "url": "https://media.sellycdn.net/files/md_081753624643_1615273716998.png"
+                            }
+                        }
+                    },
+                    "color": "#E80086"
+                }
+            ],
+            "subcategories": [
+                {
+                    "_id": "604084cd04f1246e8f290b07",
+                    "name": "Trang Phục Mùa Đông",
+                    "active": true,
+                    "categoryID": "5fe995384ed0328a42a47947"
+                }
+            ],
+            "canIssueInvoice": false,
+            "pendingInactive": false,
+            "inactiveReason": "",
+            "videos": [],
+            "statistic": {
+                "totalSell": 4,
+                "sellTotal": 4,
+                "sellWeekTotal": 4,
+                "sellMonthTotal": 4,
+                "sellTwoMonthTotal": 4,
+                "sellYearTotal": 4,
+                "sellWaiting": 0,
+                "sellPaymentProcessing": 0,
+                "sellPending": 0,
+                "sellDelivering": 1,
+                "sellDelivered": 3,
+                "sellCancelled": 0,
+                "sellCashback": 0,
+                "skuTotal": 3,
+                "skuActive": 3,
+                "view": 216,
+                "salesTotal": 817241,
+                "salesWeekTotal": 817241,
+                "salesMonthTotal": 817241,
+                "salesTwoMonthTotal": 817241,
+                "salesYearTotal": 817241,
+                "totalPost": 0,
+                "totalInventory": 1
+            },
+            "notices": [],
+            "doesSupportSellyExpress": false,
+            "reviewStatistic": {
+                "total": 5,
+                "scoreAverage": 5,
+                "scoreAverageProduct": 0,
+                "scoreAverageSupplier": 0,
+                "scoreAverageWeekTotal": 5,
+                "scoreAverageMonthTotal": 5,
+                "scoreAverageTwoMonthTotal": 1,
+                "scoreAverageYearTotal": 1,
+                "totalReview": 1,
+                "totalHasContent": 0,
+                "totalHasMedia": 0,
+                "totalScore1": 0,
+                "totalScore2": 0,
+                "totalScore3": 0,
+                "totalScore4": 0,
+                "totalScore5": 1,
+                "totalScoreProduct": 0,
+                "TotalScoreSupplier": 0,
+                "totalReviewProduct": 0,
+                "totalReviewSupplier": 0
+            },
+            "inventories": [
+                {
+                    "_id": "64741ba7e8b461077b1e5186",
+                    "name": "HM18 NINH HIỆP",
+                    "location": {
+                        "address": "Quầy A36 TTTM Tuấn Dung",
+                        "province": "ha-noi",
+                        "provinceName": "Thành phố Hà Nội",
+                        "district": "huyen-gia-lam",
+                        "ward": "xa-ninh-hiep",
+                        "fullAddress": "Quầy A36 TTTM Tuấn Dung",
+                        "location": {
+                            "latitude": 21.078377545102082,
+                            "longitude": 105.9467176968453
+                        }
+                    },
+                    "hasActiveSKU": true
+                }
+            ],
+            "policy": {
+                "productReturnPolicy": {
+                    "type": "OPEN_ARTICLE_DETAIL",
+                    "value": "61419dc183d7451f9db83c16"
+                }
+            },
+            "displaySKUId": "6707654253b6f02a5e20a2e7",
+            "freeShips": null,
+            "isOutOfStock": false,
+            "canAdd": true,
+            "reason": "",
+            "marks": [],
+            "supplier": {
+                "_id": "647036fd64b42bad9d629a9b",
+                "name": "HM18 NINH HIỆP",
+                "logo": {
+                    "_id": "647036fa210180edc62893c3",
+                    "name": "2023_05_26_04_35_06_0700_ACxOfOipoQ.jpg",
+                    "dimensions": {
+                        "sm": {
+                            "width": 786,
+                            "height": 786,
+                            "url": "https://media.sellycdn.net/files/sm_2023_05_26_04_35_06_0700_ACxOfOipoQ.jpg"
+                        },
+                        "md": {
+                            "width": 1572,
+                            "height": 1572,
+                            "url": "https://media.sellycdn.net/files/md_2023_05_26_04_35_06_0700_ACxOfOipoQ.jpg"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "message": "Thành công!"
+}

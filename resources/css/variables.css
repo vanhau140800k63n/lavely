@@ -1,0 +1,38 @@
+:root {
+  --app-gradient: linear-gradient(89.5deg, #83ccff 0.4%, #4290fb 100.3%);
+  --app-gradient-disabled: linear-gradient(89.5deg, #ababab 0.4%, #6e7987 100.3%);
+  --app-color: #4290fb;
+  --price-text-color: #ee4d2d;
+  --del-btn-color: #F45C43;
+  --del-btn-gradient: linear-gradient(to right, #F45C43 0%, #F45C43 51%, #EB3349 100%);
+  --update-btn-color: #8CA6DB;
+  --update-btn-gradient: linear-gradient(89.5deg, rgba(131, 204, 255, 1) 0.4%, rgba(66, 144, 251, 1) 100.3%);
+  --title-font-size: 24px;
+  --price-sale-font-size: 16px;
+  --price-default-font-size: 12px;
+
+  /* --app-gradient: linear-gradient(90deg, rgba(255, 52, 52, 1) 0%, rgba(255, 55, 0, 1) 51%, rgba(255, 41, 64, 1) 100%);
+  --app-color: #ee4d2d; */
+  /* --app-gradient: linear-gradient(90deg, rgb(154, 154, 154) 0%, rgb(175, 171, 170) 51%, rgb(176, 176, 176) 100%);
+  --app-color: #b7b7b7; */
+
+
+}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media only screen and (max-width: 575px) {
+  :root {
+    --title-font-size: 18px;
+    --price-sale-font-size: 14px;
+    --price-default-font-size: 10px;
+  }
+}

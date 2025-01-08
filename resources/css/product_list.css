@@ -1,0 +1,258 @@
+.product_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product_list_title {
+    font-size: var(--title-font-size);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.product_container {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    width: calc(16.5%);
+    cursor: pointer;
+    z-index: 0;
+    transition: 0.4s;
+}
+
+.product_container:hover {
+    transform: translateY(-10px);
+}
+
+.product_container:hover .product_container_search {
+    display: block;
+}
+
+.product_container:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.product_list .product_card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+}
+
+.product_list .product_card .product_img {
+    width: 90%;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+.product_list .product_card .ribbon_shop {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    padding: 5px;
+    border-radius: 2px 2px 2px 0;
+    line-height: 5px;
+    background: #ed5829;
+    font-size: 11px;
+    font-weight: 500;
+    color: #fff;
+    max-width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* .product_list .product_card .ribbon_shop::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #8D2101;
+    transform: rotate(45deg);
+    z-index: -1;
+} */
+
+.product_list .product_card .ribbon_sale {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    background: #f9d435;
+    right: 10%;
+}
+
+.product_list .product_card .ribbon_sale::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+    border-left: 20px solid #f9d435;
+    border-right: 20px solid #f9d435;
+    border-top: 0 solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+.product_list .product_card .ribbon_sale p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.product_list .product_card .product_content {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    flex: 1;
+}
+
+.product_list .product_card .product_price {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.product_list .product_card .product_price span {
+    font-size: 10px;
+}
+
+.product_list .product_card .price_sale {
+    font-size: 16px;
+    color: #f16c51;
+    font-weight: 500;
+}
+
+.product_list .product_card .price_default {
+    font-size: 14px;
+    color: #afafaf;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.product_list .product_card .product_title {
+    font-weight: 500;
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    margin-bottom: 10px;
+    margin-top: auto;
+}
+
+.product_list .product_card .product_rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.product_list .product_card .product_rating .number_rated {
+    color: #edbb0e;
+}
+
+.product_list .product_card .product_rating .star_rated {
+    letter-spacing: -1px;
+    margin: 0 2px;
+    display: flex;
+    align-items: center;
+}
+
+.product_list .product_card .product_rating .star_rated i {
+    color: #edbb0e;
+    font-size: 10px;
+    margin: 0 1px;
+}
+
+.product_list .product_card .product_rating .sold_qty {
+    color: #000;
+}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+    .product_container {
+        width: 20%;
+    }
+
+    .product_list .product_card .ribbon_shop {
+        left: -3px;
+        font-size: 10px;
+    }
+
+    .product_list .product_card .product_rating * {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .product_container {
+        width: 25%;
+    }
+
+    .product_list .product_card .ribbon_shop {
+        left: -3px;
+        font-size: 10px;
+    }
+
+    .product_list .product_card .product_rating * {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .product_container {
+        width: 25%;
+    }
+
+    .product_list .product_card .ribbon_shop {
+        left: -3px;
+        font-size: 10px;
+    }
+
+    .product_list .product_card .product_rating * {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .product_container {
+        width: calc(100% / 3);
+        padding: 0 5px;
+    }
+
+    .product_list .product_card .ribbon_shop {
+        left: -3px;
+        font-size: 10px;
+    }
+
+    .product_list .product_card .product_title {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .product_container {
+        width: 50%;
+        padding: 0 5px;
+    }
+
+    .product_list .product_card .ribbon_shop {
+        left: -3px;
+        font-size: 10px;
+    }
+
+    .product_list .product_card .product_title {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
