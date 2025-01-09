@@ -8,20 +8,24 @@
         Địa chỉ <button id="add_address">+ Thêm địa chỉ</button>
     </div>
     <div class="address_container">
-        @foreach ($addresses as $address)
-            <div class="address_item" data-id="{{ $address->id }}">
-                <div class="address_info">
-                    <div class="name"> {{ $address->user_name }} <span> ({{ $address->phone }})</span></div>
-                    <div class="location">
-                        {{ ($address->address_detail ? $address->address_detail . ', ' : '') . $address->path_with_type }}
+        @if ($addresses->count() > 0)
+            @foreach ($addresses as $address)
+                <div class="address_item" data-id="{{ $address->id }}">
+                    <div class="address_info">
+                        <div class="name"> {{ $address->user_name }} <span> ({{ $address->phone }})</span></div>
+                        <div class="location">
+                            {{ ($address->address_detail ? $address->address_detail . ', ' : '') . $address->path_with_type }}
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="update_action" data-id="{{ $address->id }}">Cập nhật</button>
+                        <button class="del_action" data-id="{{ $address->id }}">Xóa</button>
                     </div>
                 </div>
-                <div class="action">
-                    <button class="update_action" data-id="{{ $address->id }}">Cập nhật</button>
-                    <button class="del_action" data-id="{{ $address->id }}">Xóa</button>
-                </div>
-            </div>
-        @endforeach
+            @endforeach
+        @else
+            <p class="noti">Chưa có địa chỉ. Vui lòng thêm địa chỉ mới.</p>
+        @endif
         <div class="popup" id="popup_form">
             <div class="popup_content">
                 <span class="close_btn" id="close_popup">&times;</span>

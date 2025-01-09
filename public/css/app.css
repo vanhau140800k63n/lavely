@@ -1915,6 +1915,12 @@ header {
     font-size: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #f8f8f8;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.user_container .noti {
+    margin: 15px 10px;
 }
 
 @media only screen and (min-width: 1400px) {}
@@ -1949,8 +1955,12 @@ header {
     }
 
     .user_sidebar .main_menu, .user_sidebar .sub_menu {
-        font-size: 12px;
+        font-size: 14px;
         padding: 10px 20px;
+    }
+
+    .user_container .title {
+        font-size: 16px;
     }
 }
 .user_info {
@@ -2001,7 +2011,20 @@ header {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {}
 
-@media only screen and (max-width: 575px) {}
+@media only screen and (max-width: 575px) {
+    .user_info .item .detail input {
+        padding: 6px 20px;
+    }
+
+    .user_info .item .label {
+        font-size: 14px;
+        width: 60px;
+    }
+
+    .user_info .item .detail {
+        width: calc(100% - 60px);
+    }
+}
 .purchase_item {
     padding: 20px;
     background: #f8f8f8;

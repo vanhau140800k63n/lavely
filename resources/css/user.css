@@ -51,6 +51,12 @@
     font-size: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #f8f8f8;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.user_container .noti {
+    margin: 15px 10px;
 }
 
 @media only screen and (min-width: 1400px) {}
@@ -85,7 +91,11 @@
     }
 
     .user_sidebar .main_menu, .user_sidebar .sub_menu {
-        font-size: 12px;
+        font-size: 14px;
         padding: 10px 20px;
+    }
+
+    .user_container .title {
+        font-size: 16px;
     }
 }
