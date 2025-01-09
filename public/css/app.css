@@ -2446,10 +2446,15 @@ header {
     display: none;
 }
 
+.menu_bar .menu_item .h_u_quantity {
+    left: calc(50% + 8px);
+}
+
 @media only screen and (max-width: 767px) {
     .menu_bar {
         display: flex;
     }
+
     .user_sidebar ul {
         padding-left: 0;
     }

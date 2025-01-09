@@ -1,7 +1,7 @@
 <div class="menu_bar">
     <div class="menu_item">
-        <a href="">
-            <span class="text">Trang Chủ</span>
+        <a href="{{ route('home') }}">
+            <img class="h_u_svg" src="{{ asset(mix('image/header/home.svg')) }}">
         </a>
     </div>
     <div class="menu_item">
@@ -12,7 +12,7 @@
     <div class="menu_item">
         <a href="{{ route('cart.detail') }}">
             <img class="h_u_svg" src="{{ asset(mix('image/header/cart.svg')) }}">
-            @if (session()->has('cart_quantity') && session('cart_quantity') > 0 )
+            @if (session()->has('cart_quantity') && session('cart_quantity') > 0)
                 <div class="h_u_quantity">{{ session('cart_quantity') < 100 ? session('cart_quantity') : 99 }}</div>
             @endif
         </a>
