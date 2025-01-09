@@ -1,6 +1,4 @@
 @extends('layouts.master')
 @section('content')
-    <script>
-        
-    </script>
+    <script type="text/javascript" src="{{ asset(mix('assets/js/admin/product.js')) }}"></script>
 @endsection

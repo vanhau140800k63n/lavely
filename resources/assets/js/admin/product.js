@@ -1,7 +1,7 @@
 function getProduct(page, nextPageToken) {
     var _token = $('input[name="_token"]').val();
     $.ajax({
-        url: "http://localhost:8005/" + "admin/product/get_list_ajax",
+        url: `${DOMAIN}/admin/product/get_list_ajax`,
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
@@ -19,7 +19,7 @@ function getProduct(page, nextPageToken) {
 
 function getProductInfo() {
     $.ajax({
-        url: "http://localhost:8005/" + "admin/product/get_product_info_ajax",
+        url: `${DOMAIN}/admin/product/get_product_info_ajax`,
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
@@ -33,5 +33,4 @@ function getProductInfo() {
 }
 
 // getProductInfo()
-
-// getProduct(0)
+getProduct(0)
