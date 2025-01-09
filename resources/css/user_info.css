@@ -25,14 +25,14 @@
     width: 100%;
     padding: 10px 20px;
     border: 1px solid #d8d8d8;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 .user_info .item .detail #save_info_btn {
     background: var(--app-gradient);
     padding: 10px 20px;
     color: #fff;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     cursor: pointer;
 }
 

@@ -39,7 +39,7 @@
 }
 
 .product_detail .info .product_image .image_detail {
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     width: 100%;
 }
 
@@ -49,7 +49,7 @@
 
 .product_image .image_slider_item {
     width: 100px !important;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     border: 3px solid #ededed;
     cursor: pointer;
     ;
@@ -139,7 +139,7 @@
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     padding: 15px 0;
     margin-top: 15px;
 }
@@ -160,7 +160,7 @@
     font-weight: 500;
     width: calc(70% - 20px);
     text-align: center;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     padding: 15px 0;
     cursor: pointer;
     background: #edf1f8;
@@ -226,7 +226,7 @@
 .form_check_label {
     padding: 6px 15px;
     background-color: #f2f2f2;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     margin: 5px;
     display: inline-block;
     cursor: pointer;
@@ -271,7 +271,7 @@
 
 .product_detail_supplier .shop {
     background: #f2f2f2;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     width: 45%;
     padding: 20px 30px;
     display: flex;

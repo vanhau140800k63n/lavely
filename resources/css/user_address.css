@@ -10,7 +10,7 @@
     font-size: 16px;
     color: #fff;
     background: var(--app-gradient);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     cursor: pointer;
 }
 
@@ -24,7 +24,7 @@
     padding: 10px 20px;
     margin: 5px 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     position: relative;
 }
 
@@ -71,7 +71,7 @@
 
 .address_container .address_item button {
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     cursor: pointer;
     margin: 2px 0;
 }

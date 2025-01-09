@@ -63,7 +63,7 @@ ul {
 
 .primary_button {
     padding: 3px 10px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     background: #e5e5e5;
 }
 
@@ -114,7 +114,7 @@ button:hover {
     background: var(--app-gradient);
     border: 0;
     color: #fff;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     margin-top: 20px;
     text-align: center;
 }

@@ -41,7 +41,7 @@
 
 .user_container {
     width: calc(100% - 300px);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     background: #fff;
     padding: 20px 30px;
     min-height: 500px;
