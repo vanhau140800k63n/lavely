@@ -186,17 +186,13 @@ class ProductController extends Controller
                     );
                 }
 
-                $productStatus->status = true;
-                $productStatus->save();
-
                 DB::commit();
             } catch (Throwable $ex) {
                 DB::rollBack();
-                $productStatus->status = true;
-                $productStatus->save();
-                return response()->json($ex->getMessage() . $ex->getLine());
             }
 
+            $productStatus->status = true;
+            $productStatus->save();
             return response()->json(true);
         }
         return response()->json(false);
