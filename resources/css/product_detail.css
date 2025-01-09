@@ -8,7 +8,6 @@
 
 .product_detail .categorie a,
 .product_detail .categorie p {
-    font-size: 18px;
     display: inline-block;
 }
 
@@ -67,11 +66,6 @@
 .product_detail_text {
     display: flex;
     align-items: center;
-}
-
-.product_detail_contain h4 {
-    font-size: 30px;
-    font-weight: 500;
 }
 
 .product_detail_contain .price {
@@ -214,10 +208,9 @@
 }
 
 .product_attr_name {
-    font-weight: 500;
-    font-size: 20px;
     text-transform: capitalize;
-    min-width: 100px;
+    min-width: 80px;
+    margin-right: 20px;
 }
 
 .product_attr_val {
@@ -246,8 +239,6 @@
 
 /* description */
 .product_description .title {
-    font-size: 30px;
-    font-weight: 500;
     margin-bottom: 10px;
 }
 
@@ -259,8 +250,7 @@
 }
 
 .product_description .content * {
-    font-size: 18px;
-    text-indent: 20px;
+    text-indent: 15px;
     color: #474747;
 }
 
@@ -269,6 +259,7 @@
 .product_detail_supplier {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product_detail_supplier .shop {
@@ -312,7 +303,7 @@
 
 .product_detail_supplier .info .title {
     font-weight: 500;
-    font-size: 18px;
+    text-transform: uppercase;
 }
 
 @media only screen and (min-width: 1400px) {}
@@ -332,16 +323,16 @@
         padding: 0;
     }
 
-    .product_detail_contain h4 {
-        font-size: 25px;
-    }
-
     .product_detail_contain .price .sale {
         font-size: 35px;
     }
 
     .product_detail_contain .price .default {
         font-size: 25px;
+    }
+
+    .product_detail .info .product_detail_contain h1 {
+        margin-top: 20px;
     }
 }
 
@@ -356,21 +347,21 @@
         padding: 0;
     }
 
-    .product_detail .categorie a,
-    .product_detail .categorie p {
-        font-size: 16px;
-    }
-
-    .product_detail_contain h4 {
-        font-size: 20px;
-    }
-
     .product_detail_contain .price .sale {
         font-size: 30px;
     }
 
     .product_detail_contain .price .default {
         font-size: 20px;
+    }
+
+    .product_detail_supplier .shop,
+    .product_detail_supplier .other_info {
+        width: 100%;
+    }
+
+    .product_detail .info .product_detail_contain h1 {
+        margin-top: 20px;
     }
 }
 
@@ -385,15 +376,6 @@
         padding: 0;
     }
 
-    .product_detail .categorie a,
-    .product_detail .categorie p {
-        font-size: 14px;
-    }
-
-    .product_detail_contain h4 {
-        font-size: 20px;
-    }
-
     .product_detail_contain .price .sale {
         font-size: 28px;
     }
@@ -402,17 +384,12 @@
         font-size: 20px;
     }
 
-    .product_detail_supplier {
-        display: block;
-    }
-
     .product_detail_supplier .shop,
     .product_detail_supplier .other_info {
         width: 100%;
     }
 
-    .product_detail_contain .sold span, .product_attr_name {
-        font-size: 16px;
+    .product_detail_contain .sold span {
         min-width: 60px;
     }
 
@@ -426,5 +403,9 @@
     .product_description .content * {
         font-size: 14px;
         padding: 0;
+    }
+
+    .product_detail .info .product_detail_contain h1 {
+        margin-top: 20px;
     }
 }

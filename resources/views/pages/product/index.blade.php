@@ -1,13 +1,10 @@
 @extends('layouts.master')
 @section('meta')
-    <meta name="description"
-        content="{{ $metaDescription }}">
-    <meta name="keywords"
-        content="{{ $metaKeywords }}">
+    <meta name="description" content="{{ $metaDescription }}">
+    <meta name="keywords" content="{{ $metaKeywords }}">
     <meta name="author" content="{{ $product->shop->name }}">
     <meta property="og:title" content="{{ $product->name }}">
-    <meta property="og:description"
-        content="{{ $metaDescription }}">
+    <meta property="og:description" content="{{ $metaDescription }}">
     <meta property="og:image" content="{{ $productImages->first()->url }}">
     <meta property="og:url" content="{{ route('product.detail', $product->id) }}">
     <meta property="og:type" content="product">
@@ -34,7 +31,7 @@
                 </div>
             </div>
             <div class="product_detail_contain">
-                <h4> {{ $product->name }}</h4>
+                <h1> {{ $product->name }}</h1>
 
                 <div class="price">
                     <div class="default">
@@ -59,12 +56,14 @@
                     </div>
                 @endif
 
-                <div class="sold"> <span>Đã bán</span> {{ $product->sold }} </div>
+                <div class="product_attr">
+                    <h4 class="product_attr_name">Đã bán</h4> {{ $product->sold }}
+                </div>
 
                 @if ($prodAttr->count() > 0)
                     @foreach ($prodAttr as $prodAttrItem)
                         <div class="product_attr">
-                            <div class="product_attr_name">{{ $prodAttrItem->name }}</div>
+                            <h4 class="product_attr_name">{{ $prodAttrItem->name }}</h4>
                             <div class="product_attr_val">
                                 @foreach ($prodAttrItem->values as $prodAttrValItem)
                                     <div class="form_check">
@@ -120,15 +119,15 @@
     </section>
 
     <section class="product_description">
-        <div class="title"> Mô tả sản phẩm </div>
+        <h2 class="title"> Mô tả sản phẩm </h2>
         <pre class="content">{!! $product->description !!}</pre>
     </section>
 
 
-    <section class="related-product">
+    {{-- <section class="related-product">
         <div class="container">
             <div class="related__product__title">
-                <h3>SẢN PHẨM TƯƠNG TỰ</h3>
+                <h2>SẢN PHẨM TƯƠNG TỰ</h2>
             </div>
             <div class="row">
                 <div class="product_list">
@@ -136,6 +135,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <script type="text/javascript" src="{{ asset(mix('assets/js/product_detail.js')) }}"></script>
 @endsection
