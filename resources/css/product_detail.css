@@ -188,13 +188,11 @@
 .product_detail_btn .quantity_btn:nth-child(1) {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    display: none;
 }
 
 .product_detail_btn .quantity_btn:nth-child(3) {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    display: none;
 }
 
 .product_detail_btn .quantity input {
