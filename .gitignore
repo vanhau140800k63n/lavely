@@ -5,18 +5,18 @@
 # Laravel specific
 /public/storage
 /public/hot
-/storage/*.key
-/storage/framework/*
-/storage/logs/*
-/storage/app/public
+# /storage/*.key
+# /storage/framework/*
+# /storage/logs/*
+# /storage/app/public
 
 # Ignore css,js
 
-/public/css
-/public/js
-/public/source
-/public/assets
-/public/image
+# /public/css
+# /public/js
+# /public/source
+# /public/assets
+# /public/image
 
 
 # Ignore environment files

@@ -1,0 +1,268 @@
+.container_auth {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(../../image/user/login_bg.jpg);
+    background-size: cover;
+}
+
+.limiter {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrap_auth {
+    width: 500px;
+    max-width: 90%;
+    height: fit-content;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 40px;
+    margin-right: 50px;
+    border: 1px solid #f2f2f2;
+}
+
+.google_btn_box {
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid rgb(205, 226, 238);
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    margin-bottom: 20px;
+}
+
+.google_btn_text {
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.google_icon {
+    width: 25px;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    outline: none;
+    border: none;
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.txt1 {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+}
+
+.txt2 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+
+
+
+/*------------------------------------------------------------------
+[ Form ]*/
+
+.auth_form {
+    width: 100%;
+}
+
+.auth_form_title {
+    display: block;
+    font-size: 25px;
+    color: #333333;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap_input {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #d9d9d9;
+    margin-bottom: 20px;
+}
+
+.label_input {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-left: 7px;
+}
+
+input {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    padding: 0 7px 0 43px;
+}
+
+.focus_input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus_input::after {
+    content: attr(data-symbol);
+    color: #adadad;
+    font-size: 22px;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: calc(100% - 20px);
+    bottom: 0;
+    left: 0;
+    padding-left: 13px;
+    padding-top: 3px;
+}
+
+.focus_input::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7f7f7f;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+.input:focus+.focus_input::before {
+    width: 100%;
+}
+
+.has-val.input+.focus_input::before {
+    width: 100%;
+}
+
+.input:focus+.focus_input::after {
+    color: #000;
+}
+
+.has-val.input+.focus_input::after {
+    color: #000;
+}
+
+
+
+.auth_form_btn {
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--app-color);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .login_banner {
+        display: none;
+    }
+
+    .container_auth {
+        justify-content: center;
+    }
+
+    .wrap_auth {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {}
+
+@media only screen and (max-width: 576px) {
+    .wrap_auth {
+        padding: 25px 15px;
+    }
+
+    .auth_form_title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        height: 40px;
+    }
+
+    .auth_form_btn {
+        height: 40px;
+    }
+}
