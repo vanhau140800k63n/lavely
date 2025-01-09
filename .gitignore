@@ -24,7 +24,7 @@
 .env.*.local
 
 # Laravel Mix
-/public/mix-manifest.json
+# /public/mix-manifest.json
 /public/js/*.map
 /public/css/*.map
 /public/hot
