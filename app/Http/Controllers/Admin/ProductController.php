@@ -43,7 +43,7 @@ class ProductController extends Controller
             curl_setopt_array(
                 $curl,
                 CurlUtils::setOptArray('https://app-api.selly.vn/products?limit=20&page=' . $page .
-                    '&sort=top_sale&city=&category=5fd9b79bbabb26c76c11a2e0&subCategory=&pageToken=' . $base64String . '&nextPageToken=' . $nextPageToken)
+                    '&sort=top_sale&city=&category=5fe995384ed0328a42a47947&subCategory=&pageToken=' . $base64String . '&nextPageToken=' . $nextPageToken)
             );
 
             $response = curl_exec($curl);
