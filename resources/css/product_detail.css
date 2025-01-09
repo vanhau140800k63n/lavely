@@ -76,13 +76,13 @@
 }
 
 .product_detail_contain .price .sale {
-    font-size: calc(var(--common-font-size) + 18px);
+    font-size: calc(var(--common-font-size) + 15px);
     color: var(--price-text-color);
     font-weight: 600;
 }
 
 .product_detail_contain .price .default {
-    font-size: calc(var(--common-font-size) + 12px);
+    font-size: calc(var(--common-font-size) + 10px);
     color: #afafaf;
     text-decoration: line-through;
     margin-right: 20px;
