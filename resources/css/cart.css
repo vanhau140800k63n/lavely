@@ -168,6 +168,7 @@
     text-align: center;
     background: #f5f5f5;
     border: none;
+    border-radius: 0;
 }
 
 .cart_product_qty .quantity_btn {
@@ -176,6 +177,7 @@
     text-align: center;
     background: #f5f5f5;
     cursor: pointer;
+    padding: 0;
 }
 
 .cart_product_price_total {
