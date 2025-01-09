@@ -83,7 +83,7 @@ class PaymentController extends Controller
             });
 
             $appliedVoucherIds = session('voucher_items', []);
-            if (!$this->arrayAreEqual($appliedVoucherIds, array_map('intval', $req->applied_vouchers))) {
+            if (!$this->arrayAreEqual($appliedVoucherIds, array_map('intval', $req->applied_vouchers ?? []))) {
                 return $this->responseAjax(null, 'Thông tin áp dụng khuyến mãi không đúng.');
             }
 
