@@ -32,5 +32,5 @@ function getProductInfo() {
     })
 }
 
-// getProductInfo()
-getProduct(0)
+getProductInfo()
+// getProduct(0)
