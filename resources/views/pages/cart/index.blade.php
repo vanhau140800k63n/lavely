@@ -78,7 +78,7 @@
         </section>
         <script type="text/javascript" src="{{ asset(mix('assets/js/cart.js')) }}"></script>
     @else
-        <section class="cart_detail first_section" style="text-align: center;">
+        <section class="cart_empty first_section" style="text-align: center;">
             <img src="{{ asset('image/cart/cart_empty.png') }}">
         </section>
     @endif

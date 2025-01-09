@@ -137,6 +137,8 @@ class CartController extends Controller
 
             $cartItem->delete();
             DB::commit();
+
+            session(['cart_quantity' => Cart::where('user_id', Auth::id())->count()]);
             return $this->responseAjax();
         } catch (Throwable) {
             DB::rollBack();
