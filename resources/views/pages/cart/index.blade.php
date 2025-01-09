@@ -6,9 +6,9 @@
 @section('content')
     @if (session()->has('cart_quantity') && session('cart_quantity'))
         <section class="cart_detail first_section" style="">
-            <div class="cart_banner">
+            <h1 class="cart_banner">
                 GIỎ HÀNG
-            </div>
+            </h1>
             <div class="cart_container">
                 <div class="cart_header">
                     <div></div>
@@ -40,10 +40,10 @@
                             </div>
                             <div class="cart_product_price">
                                 <div class="price_default">
-                                    <span>₫</span>{{ number_format($cart_item->product->max_price) }}
+                                    {{ number_format($cart_item->product->max_price) }}₫
                                 </div>
                                 <div class="price_sale">
-                                    <span>₫</span>{{ number_format($cart_item->product->max_price) }}
+                                    {{ number_format($cart_item->product->max_price) }}₫
                                 </div>
                             </div>
                             <div class="cart_product_qty">

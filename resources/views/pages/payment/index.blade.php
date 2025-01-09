@@ -5,9 +5,9 @@
 @endsection
 @section('content')
     <section class="payment_detail first_section">
-        <div class="payment_title">
+        <h1 class="payment_title">
             THANH TOÁN
-        </div>
+        </h1>
         <div class="payment_container">
             <div class="payment_customer">
                 <h4>THÔNG TIN KHÁCH HÀNG</h4>
@@ -69,7 +69,7 @@
                     <span>Thanh toán khi nhận hàng</span>
                 </div>
                 <div class="payment_order_bottom">
-                    <h3>TỔNG THANH TOÁN</h3>
+                    TỔNG THANH TOÁN
                     <div class="payment_order_detail">
                     </div>
                 </div>

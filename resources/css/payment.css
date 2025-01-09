@@ -1,10 +1,7 @@
 .payment_title {
-    height: 60px;
     background: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: var(--app-color);
-    font-size: 23px;
-    font-weight: 700;
     text-align: center;
     padding-top: 15px;
 }
@@ -28,8 +25,6 @@
 
 .payment_container h4 {
     color: #1c1c1c;
-    font-weight: 700;
-    font-size: 18px;
     border-bottom: 1px solid #e1e1e1;
     padding-bottom: 10px;
     margin-bottom: 25px;
@@ -45,6 +40,10 @@
     overflow-y: scroll;
 }
 
+.payment_detail #popup_voucher .voucher_card {
+    width: 100%;
+}
+
 .payment_container p {
     column-rule: #b2b2b2;
 }
@@ -57,7 +56,6 @@
 .payment_input p {
     color: #1c1c1c;
     font-weight: 600;
-    font-size: 13px;
     margin-bottom: 10px;
 }
 
@@ -70,7 +68,6 @@
     height: 36px;
     border: 1px solid #ebebeb;
     padding-left: 20px;
-    font-size: 14px;
     color: #000000;
     border-radius: 4px;
 }
@@ -93,7 +90,6 @@
 
 .payment_methodbox label {
     position: relative;
-    font-size: 16px;
     color: #1c1c1c;
     padding-left: 40px;
     cursor: pointer;
@@ -148,14 +144,11 @@
 
 .payment_order h4 {
     color: #1c1c1c;
-    font-weight: 700;
     border-bottom: 1px solid #e1e1e1;
-    font-size: 18px;
 }
 
 
 .payment_order .payment_order_info {
-    font-size: 13px;
     color: #1c1c1c;
     font-weight: 600;
     border-bottom: 1px solid #e1e1e1;
@@ -173,11 +166,9 @@
     align-items: center;
 }
 
-.payment_order .payment_order_bottom h3 {
-    font-size: 13px;
+.payment_order .payment_order_bottom {
     color: #1c1c1c;
     font-weight: 600;
-    letter-spacing: -0.5px;
 }
 
 .payment_order .payment_order_info span {
@@ -189,7 +180,7 @@
 }
 
 .payment_order .payment_order_bottom .payment_order_detail .price {
-    font-size: 18px;
+    font-size: calc(var(--common-font-size) + 2px);
     color: var(--price-text-color);
     font-weight: 500;
 }
@@ -200,7 +191,6 @@
 }
 
 .payment_order .order_btn {
-    font-size: 16px;
     letter-spacing: 2px;
     width: 100%;
     padding: 10px 0;
@@ -237,7 +227,7 @@
 }
 
 .payment_product_container p {
-    font-size: 12px;
+    font-size: calc(var(--common-font-size) - 2px);
     margin-bottom: 2px;
     line-height: inherit;
     display: -webkit-box;
@@ -256,13 +246,12 @@
 .payment_detail .price_sale {
     color: var(--price-text-color);
     margin-left: 10px;
-    font-size: 15px;
 }
 
 .payment_detail .price_default {
     color: #afafaf;
     text-decoration: line-through;
-    font-size: 12px;
+    font-size: calc(var(--common-font-size) - 2px);
 }
 
 .payment_shop {
@@ -271,21 +260,6 @@
     background: #fff;
     margin-bottom: 2px;
     padding: 5px;
-}
-
-.payment_shop-text {
-    padding: 1px 5px;
-    background: #ed5829;
-    font-size: 10px;
-    font-weight: 500;
-    color: #fff;
-    border-radius: 3px;
-}
-
-.payment_shop_name {
-    margin-left: 10px;
-    font-size: 11px;
-    font-weight: 500;
 }
 
 @media only screen and (min-width: 1400px) {}

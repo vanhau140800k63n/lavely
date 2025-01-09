@@ -24,7 +24,7 @@
 
     </section>
     <section class="home_category">
-        <div class="section_title">Danh mục</div>
+        <h2 class="section_title">Danh mục</h2>
         <div class="home_categories">
             @foreach ($categories as $category)
                 <div class="home_category_item">
@@ -36,7 +36,7 @@
     </section>
     <section class="">
         @foreach ($categories as $category)
-            <div class="product_list_title">{{ $category->name }}</div>
+            <h2 class="product_list_title">{{ $category->name }}</h2>
             <div class="product_list">
                 @foreach ($products[$category->id] as $product)
                     <a class="product_container" href="{{ route('product.detail', $product->id) }}">
@@ -47,16 +47,16 @@
                             </div>
                             <img src="{{ $product->image_url() }}" alt="" class="product_img">
                             <div class="product_content">
-                                <h3 class="product_title">
+                                <div class="product_title">
                                     {{ $product->name }}
-                                </h3>
+                                </div>
                                 <div class="product_bottom">
                                     <div class="product_price">
                                         <div class="price_default">
-                                            <span>₫</span>{{ number_format($product->selling_price) }}
+                                            {{ number_format($product->selling_price) }}₫
                                         </div>
                                         <div class="price_sale">
-                                            <span>₫</span>{{ number_format($product->max_price) }}
+                                            {{ number_format($product->max_price) }}₫
                                         </div>
                                     </div>
                                     <div class="product_rating">

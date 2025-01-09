@@ -11,6 +11,7 @@
   --price-sale-font-size: 16px;
   --price-default-font-size: 12px;
   --border-radius: 5px;
+  --common-font-size: 16px;
 
   /* --app-gradient: linear-gradient(90deg, rgba(255, 52, 52, 1) 0%, rgba(255, 55, 0, 1) 51%, rgba(255, 41, 64, 1) 100%);
   --app-color: #ee4d2d; */
@@ -24,11 +25,16 @@
 
 @media only screen and (min-width: 1200px) {}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  :root {
+    --common-font-size: 15px;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   :root {
     --border-radius: 4px;
+    --common-font-size: 15px;
   }
 }
 
@@ -38,6 +44,7 @@
     --price-sale-font-size: 16px;
     --price-default-font-size: 12px;
     --border-radius: 3px;
+    --common-font-size: 14px;
   }
 }
 
@@ -47,5 +54,6 @@
     --price-sale-font-size: 14px;
     --price-default-font-size: 10px;
     --border-radius: 2px;
+    --common-font-size: 14px;
   }
 }

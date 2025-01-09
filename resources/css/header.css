@@ -41,13 +41,11 @@ header {
     border: 0;
     border-radius: 2px;
     flex-grow: 1;
-    font-size: 16px;
 }
 
 .search_btn {
     padding: 0 8px;
     color: #fff;
-    font-size: 16px;
     background: var(--app-gradient);
     border-radius: var(--border-radius);
     cursor: pointer;
@@ -76,7 +74,7 @@ header {
 .search_dropdown li {
     padding: 5px 10px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: calc(var(--common-font-size) - 2px);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -112,7 +110,6 @@ header {
 
 .h_u_i_name {
     color: #fff;
-    font-size: 16px;
     font-weight: 500;
     margin-left: 5px;
 }
@@ -153,10 +150,6 @@ header {
         height: 35px;
         width: -webkit-fill-available;
     }
-
-    .search_input, .search_btn {
-        font-size: 14px;
-    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -170,9 +163,5 @@ header {
     .header_search {
         height: 35px;
         width: -webkit-fill-available;
-    }
-
-    .search_input, .search_btn {
-        font-size: 14px;
     }
 }

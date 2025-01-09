@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     padding: 15px 20px;
-    font-size: 16px;
     font-weight: 500;
 }
 
@@ -48,7 +47,7 @@
 }
 
 .user_container .title {
-    font-size: 20px;
+    font-size: calc(var(--common-font-size) + 4px);
     padding-bottom: 10px;
     border-bottom: 1px solid #f8f8f8;
     text-transform: uppercase;
@@ -91,11 +90,6 @@
     }
 
     .user_sidebar .main_menu, .user_sidebar .sub_menu {
-        font-size: 14px;
         padding: 10px 20px;
-    }
-
-    .user_container .title {
-        font-size: 16px;
     }
 }

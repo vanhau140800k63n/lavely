@@ -56,7 +56,7 @@
                     </div>
                 @endif
 
-                <div class="product_attr">
+                <div class="sold">
                     <h4 class="product_attr_name">Đã bán</h4> {{ $product->sold }}
                 </div>
 
@@ -97,7 +97,7 @@
         <div class="shop">
             <img src="{{ $product->shop->image }}">
             <div class="info">
-                <div class="name">{{ $product->shop->name }}</div>
+                <h4 class="name">{{ $product->shop->name }}</h4>
                 <div class="product_total"><span>{{ $product->shop->product_count }}</span> sản phẩm</div>
                 <div class="sold"><span>{{ $product->shop->sold_count }}</span> đã bán</div>
             </div>

@@ -5,8 +5,6 @@
 }
 
 .product_list_title {
-    font-size: var(--title-font-size);
-    font-weight: 600;
     text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -58,7 +56,7 @@
     border-radius: 2px 2px 2px 0;
     line-height: 5px;
     background: #ed5829;
-    font-size: 11px;
+    font-size: calc(var(--common-font-size) - 4px);
     font-weight: 500;
     color: #fff;
     max-width: 100px;
@@ -116,18 +114,13 @@
     margin-bottom: 5px;
 }
 
-.product_list .product_card .product_price span {
-    font-size: 10px;
-}
-
 .product_list .product_card .price_sale {
-    font-size: 16px;
     color: #f16c51;
     font-weight: 500;
 }
 
 .product_list .product_card .price_default {
-    font-size: 14px;
+    font-size: calc(var(--common-font-size) - 2px);
     color: #afafaf;
     text-decoration: line-through;
     margin-right: 10px;
@@ -135,7 +128,7 @@
 
 .product_list .product_card .product_title {
     font-weight: 500;
-    font-size: 13px;
+    font-size: calc(var(--common-font-size) - 2px);
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
@@ -153,6 +146,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.product_list .product_card .product_rating * {
+    font-size: calc(var(--common-font-size) - 2px);
 }
 
 .product_list .product_card .product_rating .number_rated {
@@ -185,11 +182,6 @@
 
     .product_list .product_card .ribbon_shop {
         left: -3px;
-        font-size: 10px;
-    }
-
-    .product_list .product_card .product_rating * {
-        font-size: 13px;
     }
 }
 
@@ -200,11 +192,6 @@
 
     .product_list .product_card .ribbon_shop {
         left: -3px;
-        font-size: 10px;
-    }
-
-    .product_list .product_card .product_rating * {
-        font-size: 12px;
     }
 }
 
@@ -215,11 +202,6 @@
 
     .product_list .product_card .ribbon_shop {
         left: -3px;
-        font-size: 10px;
-    }
-
-    .product_list .product_card .product_rating * {
-        font-size: 12px;
     }
 }
 
@@ -231,11 +213,9 @@
 
     .product_list .product_card .ribbon_shop {
         left: -3px;
-        font-size: 10px;
     }
 
     .product_list .product_card .product_title {
-        font-size: 12px;
         margin-bottom: 5px;
     }
 }
@@ -248,11 +228,9 @@
 
     .product_list .product_card .ribbon_shop {
         left: -3px;
-        font-size: 10px;
     }
 
     .product_list .product_card .product_title {
-        font-size: 12px;
         margin-bottom: 5px;
     }
 }

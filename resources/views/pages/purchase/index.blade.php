@@ -13,7 +13,6 @@
             <div class="purchase_search_item" data-filter="pending">Chờ xử lý</div>
             <div class="purchase_search_item" data-filter="processing">Đang xử lý</div>
             <div class="purchase_search_item" data-filter="completed">Hoàn thành</div>
-            <div class="purchase_search_item" data-filter="canceled">Đã hủy</div>
         </div>
         <div class="purchase_list">
             @foreach ($purchaseList as $purchase)

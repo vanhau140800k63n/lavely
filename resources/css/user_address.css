@@ -7,7 +7,6 @@
 .user_container .address_title button,
 .address_container .address_form button {
     padding: 5px 10px;
-    font-size: 16px;
     color: #fff;
     background: var(--app-gradient);
     border-radius: var(--border-radius);
@@ -55,13 +54,12 @@
 }
 
 .address_container .address_item .name {
-    font-size: 20px;
+    font-size: calc(var(--common-font-size) + 4px);
     font-weight: 500;
 }
 
 .address_container .address_item .name span {
     color: #555555;
-    font-size: 16px;
 }
 
 .address_container .address_item .location {
@@ -89,13 +87,5 @@
 @media only screen and (max-width: 575px) {
     .address_container .address_item {
         padding: 10px;
-    }
-
-    .address_container .address_item .name {
-        font-size: 16px;
-    }
-
-    .user_container .address_title button, .address_container .address_form button {
-        font-size: 12px;
     }
 }

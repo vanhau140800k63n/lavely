@@ -34,7 +34,6 @@
 }
 
 .purchase_bottom .purchase_price {
-    font-size: 16px;
     text-align: right;
 }
 
@@ -44,7 +43,6 @@
 
 .purchase_bottom .purchase_price span,
 .purchase_product_price {
-    font-size: var(--price-sale-font-size);
     font-weight: 500;
     color: var(--price-text-color);
 }
@@ -70,12 +68,11 @@
 }
 
 .purchase_search_item {
-    width: 20%;
+    width: 25%;
     padding: 10px 15px;
     cursor: pointer;
     text-align: center;
     transition: background-color 0.3s, font-weight 0.3s;
-    font-size: 16px;
 }
 
 .purchase_search_item.active {
@@ -92,12 +89,5 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {}
 
 @media only screen and (max-width: 991px) {
-    .purchase_search_item {
-        padding: 5px 10px;
-        font-size: 12px;
-    }
-
-    .purchase_item {
-        margin: 10px 5px;
-    }
+    
 }
