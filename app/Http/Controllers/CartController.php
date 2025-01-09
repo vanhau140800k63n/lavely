@@ -22,55 +22,69 @@ class CartController extends Controller
     public function addToCart(Request $req)
     {
         DB::beginTransaction();
-
         try {
             $prodAttrVal = $req->prodAttrVal;
-            $quantity = $req->quantity;
-            $productId = $req->productId;
+            $quantity    = $req->quantity;
+            $productId   = $req->productId;
+
+            if (empty($quantity) || !is_numeric($quantity) || $quantity < 1) {
+                return $this->responseAjax(null, 'Số lượng không hợp lệ');
+            }
 
             $product = Product::find($productId);
-            if (!$product || !$quantity) {
+            if (!$product) {
                 return $this->responseAjax(null, 'Thông tin sản phẩm không đúng');
             }
 
-            $prodAttrStatus = false;
-            $prodItemId = null;
-
             $prodItems = ProdItem::where('product_id', $productId)->get();
 
+            $prodAttrStatus = false;
+            $prodItemId     = null;
+
             if ($prodItems->isNotEmpty()) {
-                foreach ($prodItems as $prodItem) {
-                    $prodItemAttr = explode('-', $prodItem->attr);
-                    if ($this->arrayAreEqual($prodAttrVal, $prodItemAttr)) {
-                        $prodItemId  = $prodItem->id;
-                        $prodAttrStatus = true;
-                        break;
+                if (
+                    $prodItems->count() === 1 &&
+                    $prodItems->first()->attr === "" &&
+                    empty($prodAttrVal)
+                ) {
+                    $prodItemId     = $prodItems->first()->id;
+                    $prodAttrStatus = true;
+                } else {
+                    foreach ($prodItems as $prodItem) {
+                        $prodItemAttr = explode('-', $prodItem->attr);
+
+                        if ($this->arrayAreEqual($prodAttrVal, $prodItemAttr)) {
+                            $prodItemId     = $prodItem->id;
+                            $prodAttrStatus = true;
+                            break;
+                        }
                     }
                 }
-            } elseif (empty($prodAttrVal)) {
-                $prodAttrStatus = true;
+            } else {
+                if (empty($prodAttrVal)) {
+                    $prodAttrStatus = true;
+                }
             }
 
             if (!$prodAttrStatus) {
                 return $this->responseAjax(null, 'Không tìm thấy phân loại sản phẩm');
             }
 
-            $productCart = Cart::create(
-                [
-                    'user_id' => Auth::id(),
-                    'product_id' => $product->id,
-                    'prod_item_id' => $prodItemId,
-                    'quantity' => $quantity,
-                    'price' => $product->max_price,
-                ]
-            );
+            $productCart = Cart::create([
+                'user_id'      => Auth::id(),
+                'product_id'   => $product->id,
+                'prod_item_id' => $prodItemId,
+                'quantity'     => $quantity,
+                'price'        => $product->max_price,
+            ]);
 
             session(['cart_quantity' => Cart::where('user_id', Auth::id())->count()]);
+
             DB::commit();
             return $this->responseAjax($productCart);
         } catch (Throwable $ex) {
             DB::rollBack();
-            return $this->responseAjax(null, $ex->getMessage() . $ex->getLine());
+            return $this->responseAjax(null, $ex->getMessage() . ' - Line: ' . $ex->getLine());
         }
     }
 

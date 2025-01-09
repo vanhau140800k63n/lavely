@@ -191,8 +191,10 @@ class ProductController extends Controller
 
                 DB::commit();
             } catch (Throwable $ex) {
-                return response()->json($ex->getMessage() . $ex->getLine());
                 DB::rollBack();
+                $productStatus->status = true;
+                $productStatus->save();
+                return response()->json($ex->getMessage() . $ex->getLine());
             }
 
             return response()->json(true);
