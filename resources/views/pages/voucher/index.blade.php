@@ -15,7 +15,7 @@
                         <img class="voucher_card_img" src="{{ $voucher->voucherType()->image() }}" alt="" />
                         <div class="voucher_card_vertical"></div>
                         <div class="voucher_card_content">
-                            <h3>{{ $voucher->voucherType()->name() }}</h3>
+                            <div class="voucher_card_name">{{ $voucher->voucherType()->name() }}</div>
                             <div class="coupon_detail">
                                 {{ number_format($voucher->discount_amount) . $voucher->discountType()->unit() }}
                                 <span>Giảm</span>

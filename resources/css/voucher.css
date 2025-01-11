@@ -45,24 +45,19 @@
 }
 
 .voucher_card_content .coupon_detail {
-    font-size: 20px;
+    font-size: calc(var(--common-font-size) + 4px);
     font-weight: 500;
     color: var(--price-text-color);
 }
 
-.voucher_card_content h2 span {
-    font-size: 18px;
-}
-
-.voucher_card_content h3 {
-    font-size: 16px;
+.voucher_card_content .voucher_card_name {
     color: #565656;
     text-transform: uppercase;
 }
 
 .voucher_card_content p,
 .voucher_card_content p i {
-    font-size: 12px;
+    font-size: calc(var(--common-font-size) - 2px);
     color: #696969;
 }
 

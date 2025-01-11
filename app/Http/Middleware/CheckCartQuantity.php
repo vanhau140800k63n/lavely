@@ -20,11 +20,10 @@ class CheckCartQuantity
     public function handle(Request $request, Closure $next)
     {
         try {
-            if (Auth::check() && !session()->has('cart_quantity')) {
-                $cartQuantity = Cart::where('user_id', Auth::id())->count();
-                session(['cart_quantity' => $cartQuantity]);
+            if (Auth::check()) {
+                session(['cart_quantity' => Cart::where('user_id', Auth::id())->count()]);
             }
-        } catch (Throwable $ex) {
+        } catch (Throwable) {
         }
 
         return $next($request);
