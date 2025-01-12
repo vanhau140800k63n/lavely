@@ -251,18 +251,8 @@ h4 {
   --del-btn-gradient: linear-gradient(to right, #F45C43 0%, #F45C43 51%, #EB3349 100%);
   --update-btn-color: #8CA6DB;
   --update-btn-gradient: linear-gradient(89.5deg, rgba(131, 204, 255, 1) 0.4%, rgba(66, 144, 251, 1) 100.3%);
-  --title-font-size: 24px;
-  --price-sale-font-size: 16px;
-  --price-default-font-size: 12px;
   --border-radius: 5px;
   --common-font-size: 16px;
-
-  /* --app-gradient: linear-gradient(90deg, rgba(255, 52, 52, 1) 0%, rgba(255, 55, 0, 1) 51%, rgba(255, 41, 64, 1) 100%);
-  --app-color: #ee4d2d; */
-  /* --app-gradient: linear-gradient(90deg, rgb(154, 154, 154) 0%, rgb(175, 171, 170) 51%, rgb(176, 176, 176) 100%);
-  --app-color: #b7b7b7; */
-
-
 }
 
 @media only screen and (min-width: 1400px) {}
@@ -284,9 +274,6 @@ h4 {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   :root {
-    --title-font-size: 20px;
-    --price-sale-font-size: 16px;
-    --price-default-font-size: 12px;
     --border-radius: 3px;
     --common-font-size: 14px;
   }
@@ -294,9 +281,6 @@ h4 {
 
 @media only screen and (max-width: 575px) {
   :root {
-    --title-font-size: 18px;
-    --price-sale-font-size: 14px;
-    --price-default-font-size: 10px;
     --border-radius: 2px;
     --common-font-size: 14px;
   }
@@ -902,6 +886,12 @@ header {
     align-items: center;
 }
 
+.product_detail_contain .sold span {
+    font-size: calc(var(--common-font-size) + 1px);
+    font-weight: 500;
+    color: var(--app-color);
+}
+
 .product_attr_name {
     text-transform: capitalize;
     width: 80px;
@@ -1055,10 +1045,6 @@ header {
     .product_detail_supplier .shop,
     .product_detail_supplier .other_info {
         width: 100%;
-    }
-
-    .product_detail_contain .sold span {
-        min-width: 60px;
     }
 
     .form_check_label {

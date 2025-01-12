@@ -9,6 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('image/favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('image/favicon_io/favicon-16x16.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('image/favicon_io/favicon.ico') }}">
+
     <!-- style -->
     <link rel="shortcut icon" href="source/img/logodevsnevn.png" />
     <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}" type="text/css">

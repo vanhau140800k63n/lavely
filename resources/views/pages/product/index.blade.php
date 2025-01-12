@@ -57,7 +57,8 @@
                 @endif
 
                 <div class="sold">
-                    <h4 class="product_attr_name">Đã bán</h4> {{ $product->sold }}
+                    <h4 class="product_attr_name">Đã bán</h4>
+                    <span> {{ $product->sold }} sản phẩm </span>
                 </div>
 
                 @if ($prodAttr->count() > 0)

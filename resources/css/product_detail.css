@@ -195,6 +195,12 @@
     align-items: center;
 }
 
+.product_detail_contain .sold span {
+    font-size: calc(var(--common-font-size) + 1px);
+    font-weight: 500;
+    color: var(--app-color);
+}
+
 .product_attr_name {
     text-transform: capitalize;
     width: 80px;
@@ -348,10 +354,6 @@
     .product_detail_supplier .shop,
     .product_detail_supplier .other_info {
         width: 100%;
-    }
-
-    .product_detail_contain .sold span {
-        min-width: 60px;
     }
 
     .form_check_label {
