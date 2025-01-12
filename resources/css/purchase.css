@@ -2,7 +2,7 @@
     padding: 20px;
     background: #f8f8f8;
     border-radius: var(--border-radius);
-    margin-top: 20px;
+    margin: 10px 0;
 }
 
 .purchase_header {
