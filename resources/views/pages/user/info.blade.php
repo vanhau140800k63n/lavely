@@ -1,6 +1,6 @@
 @extends('layouts.user_master')
 @section('meta')
-    <title> Thông tin | Lavely Shop</title>
+    <title> Thông tin | Lavely</title>
 @endsection
 
 @section('content')

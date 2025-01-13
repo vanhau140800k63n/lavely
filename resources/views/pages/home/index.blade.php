@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="DEVSNE.VN">
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
     <meta property="og:image" content="source/img/devsne-thoi-trang-nam-nu.jpg">
-    <title>DEVSNE | FREE ONLINE SHOP</title>
+    <title>Trang chủ | Lavely</title>
 @endsection
 @section('content')
     <section class="first_section">

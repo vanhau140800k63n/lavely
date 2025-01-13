@@ -9,7 +9,7 @@
     <meta property="og:url" content="{{ route('product.detail', $product->id) }}">
     <meta property="og:type" content="product">
     <link rel="canonical" href="{{ route('product.detail', $product->id) }}">
-    <title> {{ $product->name }} | Lavely Shop</title>
+    <title> {{ $product->name }} | Lavely</title>
 @endsection
 
 @section('content')

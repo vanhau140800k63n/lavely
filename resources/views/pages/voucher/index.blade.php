@@ -1,6 +1,6 @@
 @extends('layouts.user_master')
 @section('meta')
-    <title> Mã khuyến mãi | Lavely Shop</title>
+    <title> Mã khuyến mãi | Lavely</title>
 @endsection
 
 @section('content')
