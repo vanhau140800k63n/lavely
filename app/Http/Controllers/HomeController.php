@@ -14,7 +14,7 @@ class HomeController extends Controller
         $categories = Category::all();
         $products = [];
         foreach ($categories as $category) {
-            $products[$category->id] = Product::where('category_id', $category->id)->inRandomOrder()->take(24)->get();
+            $products[$category->id] = Product::where('category_id', $category->id)->orderBy('sold', 'desc')->take(12)->get();
         }
         return view('pages.home.index', compact('products', 'categories'));
     }
