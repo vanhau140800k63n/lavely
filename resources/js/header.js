@@ -42,4 +42,12 @@ $(document).ready(function () {
     $(document).on('click', '#search_suggestions li', function () {
         location.href = `${DOMAIN}/product/${$(this).attr('product_id')}`
     });
+
+    $(document).on('click', '.search_btn', function () {
+        const searchInput = $('#search_input').val();
+
+        if (searchInput.length >= 2) {
+            location.href = `${DOMAIN}/search?keyword=${searchInput}`;
+        }
+    });
 });

@@ -2192,6 +2192,12 @@ $(document).ready(function () {
   $(document).on('click', '#search_suggestions li', function () {
     location.href = "".concat(DOMAIN, "/product/").concat($(this).attr('product_id'));
   });
+  $(document).on('click', '.search_btn', function () {
+    var searchInput = $('#search_input').val();
+    if (searchInput.length >= 2) {
+      location.href = "".concat(DOMAIN, "/search?keyword=").concat(searchInput);
+    }
+  });
 });
 
 /***/ }),
