@@ -13,6 +13,7 @@
     width: 100px;
     text-align: right;
     color: #5d5d5d;
+    font-weight: 500;
 }
 
 .user_info .item .detail {
@@ -56,5 +57,9 @@
 
     .user_info .item .detail {
         width: calc(100% - 60px);
+    }
+
+    .user_info .item {
+        padding: 5px 10px;
     }
 }

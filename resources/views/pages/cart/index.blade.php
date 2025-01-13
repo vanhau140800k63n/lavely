@@ -66,9 +66,10 @@
                 @endforeach
             </div>
             <div class="cart_bottom">
+                <a class="cart_back_btn" href="{{ url()->previous() }}"><i class="fa-solid fa-angle-left"></i></a>
                 <div class="cart_total">
-                    <span class="total_label">Tổng thanh toán</span>
-                    <span class="total_quantity">0</span> sản phẩm:
+                    <span class="total_label">Tổng</span>
+                    <span class="total_quantity">0</span> <span>sản phẩm:</span>
                     <span class="total_price">0</span><u>đ</u>
                 </div>
                 <button class="cart_payment_btn" id="cart_payment">
@@ -80,6 +81,7 @@
     @else
         <section class="cart_empty first_section" style="text-align: center;">
             <img src="{{ asset('image/cart/cart_empty.png') }}">
+            <a class="back_home_btn" href="{{ route('home') }}"> Quay lại trang chủ </a>
         </section>
     @endif
 @endsection
