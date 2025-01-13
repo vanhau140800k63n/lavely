@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('meta')
+    <title> {{ $keyword }} | Lavely</title>
 @endsection
 
 @section('content')
@@ -7,8 +8,64 @@
         <nav class="categorie">
             <a href="{{ route('home') }}"> Trang chủ </a>
             <img src={{ asset('image/common/right_arrow.svg') }}>
-            <p>{{ $keyWord }}</p>
+            <p>{{ $keyword }}</p>
         </nav>
+
+        <nav class="filter_container">
+            @php
+                $routeName = 'search.keyword';
+                $routeParams = [];
+
+                if ($searchInfo['type'] === 'brand') {
+                    $routeName = 'search.brand';
+                    $routeParams = ['brandId' => $searchInfo['info']->id];
+                } elseif ($searchInfo['type'] === 'category') {
+                    $routeName = 'search.category';
+                    $routeParams = ['categoryId' => $searchInfo['info']->id];
+                } elseif ($searchInfo['type'] === 'shop') {
+                    $routeName = 'search.shop';
+                    $routeParams = ['shopId' => $searchInfo['info']->id];
+                }
+
+                $currentPriceSort = $searchInfo['price'] ?? null;
+                $currentSoldSort = $searchInfo['sold'] ?? null;
+                $currentRatedSort = $searchInfo['rated'] ?? null;
+
+                $baseQuery = array_filter(
+                    $searchInfo,
+                    function ($value, $key) {
+                        return !in_array($key, ['price', 'sold', 'rated', 'type', 'info']);
+                    },
+                    ARRAY_FILTER_USE_BOTH,
+                );
+
+                if ($searchInfo['type'] === 'keyword') {
+                    $baseQuery['keyword'] = $searchInfo['info'];
+                }
+            @endphp
+
+            <a class="filter_item {{ $currentPriceSort ? 'active' : '' }}"
+                href="{{ route($routeName, $routeParams) . '?' . http_build_query(array_merge($baseQuery, ['price' => $currentPriceSort === 'asc' ? 'desc' : 'asc'])) }}">
+                <p>Giá bán</p>
+                <img src="{{ asset('image/filter/' . ($currentPriceSort === 'asc' ? 'asc.svg' : 'desc.svg')) }}"
+                    alt="{{ $currentPriceSort === 'asc' ? 'Ascending' : 'Descending' }}">
+            </a>
+
+            <a class="filter_item {{ $currentSoldSort ? 'active' : '' }}"
+                href="{{ route($routeName, $routeParams) . '?' . http_build_query(array_merge($baseQuery, ['sold' => $currentSoldSort === 'asc' ? 'desc' : 'asc'])) }}">
+                <p>Lượt bán</p>
+                <img src="{{ asset('image/filter/' . ($currentSoldSort === 'asc' ? 'asc.svg' : 'desc.svg')) }}"
+                    alt="{{ $currentSoldSort === 'asc' ? 'Ascending' : 'Descending' }}">
+            </a>
+
+            <a class="filter_item {{ $currentRatedSort ? 'active' : '' }}"
+                href="{{ route($routeName, $routeParams) . '?' . http_build_query(array_merge($baseQuery, ['rated' => $currentRatedSort === 'asc' ? 'desc' : 'asc'])) }}">
+                <p>Đánh giá</p>
+                <img src="{{ asset('image/filter/' . ($currentRatedSort === 'asc' ? 'asc.svg' : 'desc.svg')) }}"
+                    alt="{{ $currentRatedSort === 'asc' ? 'Ascending' : 'Descending' }}">
+            </a>
+        </nav>
+
         <div class="product_list">
             @foreach ($products as $product)
                 <a class="product_container" href="{{ route('product.detail', $product->id) }}">

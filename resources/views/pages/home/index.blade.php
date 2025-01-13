@@ -27,10 +27,10 @@
         <h2 class="section_title">Danh mục</h2>
         <div class="home_categories">
             @foreach ($categories as $category)
-                <div class="home_category_item">
+                <a class="home_category_item" href="{{ route('search.category', ['categoryId' => $category->id]) }}">
                     <img src="{{ $category->image }}">
                     <p>{{ $category->name }}</p>
-                </div>
+                </a>
             @endforeach
         </div>
     </section>

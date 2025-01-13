@@ -17,7 +17,7 @@
         <nav class="categorie">
             <a href="{{ route('home') }}"> Trang chủ </a>
             <img src={{ asset('image/common/right_arrow.svg') }}>
-            <a href="">{{ $product->category->name }}</a>
+            <a href="{{ route('search.category', ['categoryId' => $product->category->id]) }}">{{ $product->category->name }}</a>
             <img src={{ asset('image/common/right_arrow.svg') }}>
             <p class="categorie_product_name" href="">{{ $product->name }}</p>
         </nav>
@@ -95,25 +95,25 @@
     </section>
 
     <section class="product_detail_supplier">
-        <div class="shop">
+        <a class="shop" href="{{ route('search.shop', ['shopId' => $product->shop->id]) }}">
             <img src="{{ $product->shop->image }}">
             <div class="info">
                 <h4 class="name">{{ $product->shop->name }}</h4>
                 <div class="product_total"><span>{{ $product->shop->product_count }}</span> sản phẩm</div>
                 <div class="sold"><span>{{ $product->shop->sold_count }}</span> đã bán</div>
             </div>
-        </div>
+        </a>
         <div class="other_info">
             @if ($product->brand)
                 <div class="info">
                     <div class="title">Thương hiệu</div>
-                    <div class="content">{{ $product->brand->name }}</div>
+                    <a class="content" href="{{ route('search.brand', ['brandId' => $product->brand->id]) }}">{{ $product->brand->name }}</a>
                 </div>
             @endif
             @if ($product->category)
                 <div class="info">
                     <div class="title">Danh mục</div>
-                    <div class="content">{{ $product->category->name }}</div>
+                    <a class="content" href="{{ route('search.category', ['categoryId' => $product->category->id]) }}">{{ $product->category->name }}</a>
                 </div>
             @endif
         </div>
