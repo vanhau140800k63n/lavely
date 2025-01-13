@@ -29,4 +29,25 @@ class HomeController extends Controller
 
         return $this->responseAjax(['products' => $products]);
     }
+
+    public function searchKey(Request $req)
+    {
+        $products = [];
+        $keyWord = $req->keyword;
+
+        $products = Product::where('name', 'like', '%' . $keyWord . '%')
+            ->limit(10)
+            ->get();
+        return view('pages.search.index', compact('keyWord', 'products'));
+    }
+
+    public function searchBrand($id, Request $req) {
+        $products = Product::where('name', 'like', '%' . $id . '%')
+            ->limit(10)
+            ->get();
+    }
+
+    public function searchCategory($id, Request $req) {}
+
+    public function searchShop($id, Request $req) {}
 }

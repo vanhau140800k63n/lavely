@@ -28,7 +28,11 @@ Route::prefix('product')->name('product.')->group(function () {
 });
 
 Route::prefix('search')->name('search.')->group(function () {
+	Route::get('/', [HomeController::class, 'searchKey'])->name('search');
 	Route::get('/suggestions', [HomeController::class, 'searchSuggestions'])->name('suggestions');
+	Route::get('/brand/{id}', [HomeController::class, 'searchBrand'])->name('brand');
+	Route::get('/category/{id}', [HomeController::class, 'searchCategory'])->name('category');
+	Route::get('/shop/{id}', [HomeController::class, 'searchShop'])->name('shop');
 });
 
 Route::middleware('check.login')->group(function () {

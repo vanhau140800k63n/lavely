@@ -1,0 +1,28 @@
+.categorie {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.categorie a,
+.categorie p {
+    display: inline-block;
+}
+
+.categorie .categorie_product_name {
+    flex: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.categorie a {
+    color: var(--app-color)
+}
+
+.categorie img {
+    height: 15px;
+    margin: 0 10px;
+}
