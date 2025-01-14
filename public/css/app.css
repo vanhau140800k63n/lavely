@@ -2375,7 +2375,7 @@ header {
 
 .pagination li.disabled a,
 .pagination li.disabled span {
-    opacity: 0.2;
+    display: none;
 }
 
 .pagination li.active a,

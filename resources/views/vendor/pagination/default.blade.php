@@ -22,7 +22,7 @@
                         @elseif ($page == $paginator->currentPage() + 1 || $page == $paginator->currentPage() + 2 || $page == $paginator->lastPage())
                             <li><a href="{{ $url }}">{{ $page }}</a></li>
                         @elseif ($page == $paginator->lastPage() - 1)
-                            <li class="disabled"><span> ... </span></li>
+                            <li class=""><span> ... </span></li>
                         @endif
                     @endforeach
                 @endif
