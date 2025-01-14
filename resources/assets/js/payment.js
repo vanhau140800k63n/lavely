@@ -141,7 +141,7 @@ $(document).ready(async function () {
                     });
                 } else {
                     $('.payment_order_detail').html(`
-                        <div class="price">${new Intl.NumberFormat().format(totalPrice)}đ</div>
+                        <div class="price">${new Intl.NumberFormat().format(totalPrice + 35000)}đ</div>
                     `);
                 }
             } else {
