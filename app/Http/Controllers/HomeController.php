@@ -99,14 +99,22 @@ class HomeController extends Controller
                 $query->orderBy('max_price', $priceOrder);
             }
 
-            
-            
-            $products = $query->limit(24)->get();
-            
+            $appends = [
+                'sold' => $soldOrder,
+                'rated' => $ratedOrder,
+                'price' => $priceOrder,
+            ];
+
+            if (!empty($keyword)) {
+                $appends['keyword'] = $keyword;
+            }
+
+            $products = $query->paginate(24)->appends($appends);
+
             $searchInfo = $request->all();
             $searchInfo['type'] = $type;
             $searchInfo['info'] = $info;
-            if(isset($info->name)) {
+            if (isset($info->name)) {
                 $keyword = $info->name;
             }
 

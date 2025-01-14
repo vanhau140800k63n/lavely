@@ -1,0 +1,28 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination, .pagination *
+ {
+    padding: 0;
+ }
+.pagination li a,
+.pagination li span {
+    padding: 10px 15px;
+    background: rgb(247, 247, 247);
+    font-weight: 500;
+}
+
+.pagination li.disabled a,
+.pagination li.disabled span {
+    opacity: 0.2;
+}
+
+.pagination li.active a,
+.pagination li.active span {
+    background: var(--app-gradient);
+    color: #fff;
+}

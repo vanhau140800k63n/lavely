@@ -47,22 +47,19 @@
             <a class="filter_item {{ $currentPriceSort ? 'active' : '' }}"
                 href="{{ route($routeName, $routeParams) . '?' . http_build_query(array_merge($baseQuery, ['price' => $currentPriceSort === 'asc' ? 'desc' : 'asc'])) }}">
                 <p>Giá bán</p>
-                <img src="{{ asset('image/filter/' . ($currentPriceSort === 'asc' ? 'asc.svg' : 'desc.svg')) }}"
-                    alt="{{ $currentPriceSort === 'asc' ? 'Ascending' : 'Descending' }}">
+                <img src="{{ asset('image/filter/' . ($currentPriceSort === 'asc' ? 'asc.svg' : 'desc.svg')) }}">
             </a>
 
             <a class="filter_item {{ $currentSoldSort ? 'active' : '' }}"
                 href="{{ route($routeName, $routeParams) . '?' . http_build_query(array_merge($baseQuery, ['sold' => $currentSoldSort === 'asc' ? 'desc' : 'asc'])) }}">
                 <p>Lượt bán</p>
-                <img src="{{ asset('image/filter/' . ($currentSoldSort === 'asc' ? 'asc.svg' : 'desc.svg')) }}"
-                    alt="{{ $currentSoldSort === 'asc' ? 'Ascending' : 'Descending' }}">
+                <img src="{{ asset('image/filter/' . ($currentSoldSort === 'asc' ? 'asc.svg' : 'desc.svg')) }}">
             </a>
 
             <a class="filter_item {{ $currentRatedSort ? 'active' : '' }}"
                 href="{{ route($routeName, $routeParams) . '?' . http_build_query(array_merge($baseQuery, ['rated' => $currentRatedSort === 'asc' ? 'desc' : 'asc'])) }}">
                 <p>Đánh giá</p>
-                <img src="{{ asset('image/filter/' . ($currentRatedSort === 'asc' ? 'asc.svg' : 'desc.svg')) }}"
-                    alt="{{ $currentRatedSort === 'asc' ? 'Ascending' : 'Descending' }}">
+                <img src="{{ asset('image/filter/' . ($currentRatedSort === 'asc' ? 'asc.svg' : 'desc.svg')) }}">
             </a>
         </nav>
 
@@ -108,5 +105,7 @@
                 </a>
             @endforeach
         </div>
+
+        {{ $products->links('vendor.pagination.default') }}
     </section>
 @endsection
